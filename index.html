@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Bài tập</h1>
+    <h1>Phiếu khảo sát</h1>
+    <table>
+        <form>
+           <tr>
+            <td><label for="name"><b>Họ tên</b></label></td>
+            <td><input type="text" id="name" name="name" value=""></td>
+           </tr>
+           <tr>
+           <td><label for="color"><b>Màu yêu thích</b></label></td>
+           <td><input type="color" id="color" name="color" value="#FF0000"></td>
+           </tr>
+           <tr>
+            <td><label for="ngaysinh"><b>Ngày sinh</b></label></td>
+            <td><input type="date" id="ngaysinh" name="ngaysinh" value="" placeholder="dd/mm/yyyy"></td>
+           </tr>
+           <tr>
+            <td><label for="email"><b>Email</b></label></td>
+            <td><input type="email" id="email" name="email" value=""></td>
+           </tr>
+           <tr>
+            <td><label for="nganhnghe"><b>Ngành nghề</b></label></td>
+            <td><input type="text" id="nganhnghe" name="nganhnghe" value=""></td>
+           </tr>
+           <tr>
+            <td><label for="Website"><b>website</b></label></td>
+            <td><input type="url" id="Website" name="Website" value=""></td>
+           </tr>
+           <tr>
+            <td height="70px" width="200px"><label for="so"><b>Con số yêu thích (1 - 9)</b></label></td>
+            <td><input type="number" id="so" name="so" min="1" max="9" value=""></td>
+           </tr>
+           <tr>
+            <td><b>Thu nhập</b></td>
+            <td>
+                <span>100 (USD)</span> 
+                <input type="range" id="range" min="100" max="1000" step="10" value="450">
+                <span>1000 (USD)</span>
+                <p>* tỉ giá <input type="number" id="tigia" value="22500">
+                = <span>9000000</span> VND
+                </p>
+            </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit">Gửi đi</button>
+                    <button type="reset">Xoá hết</button>
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
